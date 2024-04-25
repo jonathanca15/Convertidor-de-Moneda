@@ -9,7 +9,7 @@ public class Main {
 
     private static final String API_KEY = "92ea327a9e22387c22e81b82";
     private static final String API_BASE_URL = "https://v6.exchangerate-api.com/v6/";
-    private static final String BASE_CURRENCY = "MXN"; // Moneda base fija en USD
+    private static final String BASE_CURRENCY = "MXN"; // Moneda base fija en Peso Mexicano
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Main {
         double amount = scanner.nextDouble();
 
         System.out.println("Ingrese la moneda a la que desea convertir (por ejemplo, USD, EUR, GBP, JPY):");
-        String targetCurrency = scanner.next().toUpperCase(); // Convertir a mayúsculas
+        String targetCurrency = scanner.next().toUpperCase(); 
 
         double convertedAmount = convertCurrency(amount, targetCurrency);
         if (convertedAmount != -1) {
